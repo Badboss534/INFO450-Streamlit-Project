@@ -5,7 +5,7 @@ import plotly.express as px
 st.title("FEMA Disaster Relief Dashboard")
 
 # Link to professor's Google Cloud bucket file
-url = "https://storage.googleapis.com/info_450/IndividualAssistanceHousingRegistrantsLargeDisasters%20(1).csv"
+df = pd.read_csv("fema_sample.csv")
 
 # Load FEMA dataset
 @st.cache_data
@@ -67,3 +67,4 @@ st.markdown(
     "TSA eligible households tend to have higher repair amounts and a wider spread "
     "compared to non eligible households."
 )
+
