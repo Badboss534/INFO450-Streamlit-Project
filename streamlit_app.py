@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import numpy as np # For creating dummy data
+
+st.write("Authors: Tasrique Chowdhury")
 
 st.title("FEMA Disaster Relief Dashboard")
 
@@ -23,6 +24,7 @@ labels={"tsaEligible": "TSA Eligible (1=Yes, 0=No)",
 st.plotly_chart(fig_box)
 
 st.markdown("*Insight:* Compare the central tendency and spread of repair amounts for TSA-eligible vs. non-eligible households.*")
+
 
 
 
