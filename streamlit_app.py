@@ -7,7 +7,8 @@ st.title("FEMA Disaster Relief Dashboard")
 
 #--- Load FEMA dataset--
 # Option 2: Or use a raw GitHub or LinkedIn file link
-df = pd.read_csv("https://raw.githubusercontent.com/username/repo/main/fema_sample.csv")
+df = pd.read_csv("fema_sample.csv")
+
 
 # Temporary dummy data for demonstration. Please replace this with your actual data loading.
 if 'df' not in locals():
@@ -37,4 +38,5 @@ st.plotly_chart(fig_box)
 
 #--- Optional text summary--
 st.markdown("*Insight:* Compare the central tendency and spread of repair amounts for TSA-eligible vs. non-eligible households.*")
+
 
